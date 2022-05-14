@@ -33,6 +33,7 @@ app.get('/search', async (req, res) => {
         }
         else {
             res.status(200).send(result);
+            
         }
     }).clone().catch(function (err) { console.log(err) })
 

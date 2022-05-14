@@ -12,9 +12,9 @@ function Find() {
             }
         })
             .then(function (response) {
-                console.log(response.data);
+                console.log(response.data);  
                 setData(response.data);
-
+                
             })
             .catch(function (error) {
                 console.log(error);
@@ -27,6 +27,7 @@ function Find() {
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="name" className='label mt-3'>Name :  </label>
                     <input type="text" name="name" placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} required />
+                {(data.length === 0) && <p className="alert">No Records Found</p>   }
                     <div className='subtn'>
                         <button className='btn btn-primary w-50 submit'>Submit</button>
                     </div>

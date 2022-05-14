@@ -128,6 +128,11 @@ input {
     font-weight: 600;
 }
 
+.alert {
+    color: red;
+    font-size: 1.2rem;
+}
+
 @media screen and (max-width: 360px) {
     .body {
         font-size: 10px;
